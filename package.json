@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "@line/liff": "^2.21.2",
+    "jquery": "^3.6.1"
+  },
+  "type": "module",
+  "name": "lineliff",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "description": ""
+}
