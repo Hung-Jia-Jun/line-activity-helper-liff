@@ -1,4 +1,4 @@
-var liffID = '1657565478-OlzWzEJ2';
+var liffID = {{liffID}};
 
 liff.init({
   liffId: liffID
