@@ -63,7 +63,7 @@
     <div class="row" style="justify-content: center;">
       <div class="col-3">
       </div> 
-      <div class="col-3">
+      <div class="col">
         <button v-if="showAddField" v-on:click="add_field" type="button" class="btn btn-light Btn">+</button>
         <button v-on:click="remove_field" type="button" class="btn btn-light Btn">-</button>
       </div> 
