@@ -1,12 +1,12 @@
 {
   "dependencies": {
     "@line/liff": "^2.21.2",
-    "jquery": "^3.6.1"
+    "jquery": "^3.6.1",
+    "vue-router": "^4.0.13"
   },
   "name": "lineliff",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

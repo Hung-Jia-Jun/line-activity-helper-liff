@@ -1,5 +1,4 @@
 <script setup>
-import CreateActivity from './components/CreateActivity.vue'
 </script>
 
 <template>
@@ -8,7 +7,7 @@ import CreateActivity from './components/CreateActivity.vue'
   </header> -->
 
   <!-- <div id="app"> -->
-    <CreateActivity></CreateActivity>
+    <router-view></router-view>
   <!-- </div> -->
 
 </template>
