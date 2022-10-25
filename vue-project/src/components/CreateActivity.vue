@@ -3,8 +3,6 @@
     <div class="row" style="justify-content: center; margin-bottom: 15px;">
       <div class="col" >
         <h1 style="color:#000;">報名小幫手 - 建立活動</h1>
-        <router-link style="color: #000;" to="/">Go to Home</router-link>
-        <router-link style="color: #000;" to="/activity">Go to activity</router-link>
         <!-- <router-view></router-view> -->
 
         <input v-model="activity.name" class="form-control" placeholder="活動名稱">
@@ -151,9 +149,12 @@
           }
         },
         submit(){
-          console.log(this.activity)
-          this.$router.push({ name: 'Activity', params: { activity: this.activity } })
+          this.$router.push({
+            name: "PublishActivitivy",
+            query: { q: JSON.stringify(this.activity) },
+          });
         }
+
       },
       // `mounted` is a lifecycle hook which we will explain later
       mounted() {

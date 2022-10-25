@@ -3,6 +3,7 @@
     <div class="row" style="justify-content: center; margin-bottom: 15px;">
       <div class="col" >
         <h1 style="color:#000;">{{activity.name}}</h1>
+        <p>{{ $route.params.id }}</p>
         <router-link style="color: #000;" to="/">Go to Home</router-link>
         <router-link style="color: #000;" to="/activity">Go to activity</router-link>
         <!-- <router-view></router-view> -->
@@ -95,6 +96,11 @@
           }
         }
       },
+      props: {
+        _activity: {
+          type: String,
+        },
+      },
       computed:{
         showRemoveFormBtn()
         {
@@ -105,12 +111,18 @@
           {
             return false
           }
-        }
+        },
+        activityData() {
+          return JSON.parse(this._activity);
+        },
       },
       watch:{
         activityName:function(newValue,oldValue){
           console.log(newValue)
         }
+      },
+      created() {
+        this.activity = JSON.parse(this.$route.params._activity)
       },
       methods: {
 
@@ -154,10 +166,5 @@
         publish(){
         }
       },
-      // `mounted` is a lifecycle hook which we will explain later
-      mounted() {
-        console.log(this.activity)
-        this.activity = this.activity
-      }
     }
 </script>
