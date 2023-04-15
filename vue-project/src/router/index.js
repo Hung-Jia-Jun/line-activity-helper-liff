@@ -2,7 +2,7 @@ import { createWebHistory, createRouter } from "vue-router";
 import CreateActivity from "@/components/CreateActivity.vue";
 
 import Activity from "@/components/Activity.vue";
-import PublishActivitivy from "@/components/PublishActivitivy.vue";
+import PublishActivity from "@/components/PublishActivity.vue";
 const routes = [
     { 
         path: "/",
@@ -15,9 +15,9 @@ const routes = [
         component: Activity,
     },
     { 
-        path: "/publish_activitivy",
-        name: "PublishActivitivy",
-        component: PublishActivitivy,
+        path: "/publish_activity",
+        name: "PublishActivity",
+        component: PublishActivity,
         props: route => ({ query: route.query.q })
     },
 ];
